@@ -4,7 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 function SliderSection() {
   return (
-    <section className="content-section">
+    <section className="content-section frame-space-before-medium frame-space-after-medium">
       <div className="container">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
