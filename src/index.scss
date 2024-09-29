@@ -1,0 +1,24 @@
+// Include our own variables and the ones that override the Bootstrap variables
+// Always include base file first
+@import 'scss/base/variables';
+
+// frameworks
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons';
+@import '../node_modules/swiper/swiper';
+@import '../node_modules/swiper/modules/navigation';
+@import '../node_modules/swiper/modules/pagination';
+
+//  Include base styles
+@import 'scss/mixins/mixins';
+@import 'scss/base/font-size';
+@import 'scss/base/typography';
+@import 'scss/base/button';
+
+//  Include our custom styles
+@import 'scss/include/spacing';
+@import 'scss/include/general';
+@import 'components/header/header';
+@import 'components/landing-section/landing-section';
+@import 'components/feature-section/feature-section';
+@import 'components/slider/slider';

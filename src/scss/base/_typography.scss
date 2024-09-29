@@ -1,0 +1,294 @@
+/****************************************************************************
+ * Fonts
+ ***************************************************************************/
+
+// Poppins Light
+@font-face {
+  font-family: 'Poppins';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../fonts/poppins/Poppins-Light.woff2') format('woff2');
+  src: url('../../fonts/poppins/Poppins-Light.woff') format('woff');
+}
+
+// Poppins Regular
+@font-face {
+  font-family: 'Poppins';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/poppins/Poppins-Regular.woff2') format('woff2');
+  src: url('../../fonts/poppins/Poppins-Regular.woff') format('woff');
+}
+
+// Poppins Medium
+@font-face {
+  font-family: 'Poppins';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../fonts/poppins/Poppins-Medium.woff2') format('woff2');
+  src: url('../../fonts/poppins/Poppins-Medium.woff') format('woff');
+}
+
+// Poppins Semibold
+@font-face {
+  font-family: 'Poppins';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../fonts/poppins/Poppins-SemiBold.woff2') format('woff2');
+  src: url('../../fonts/poppins/Poppins-SemiBold.woff') format('woff');
+}
+
+// Poppins Bold
+@font-face {
+  font-family: 'Poppins';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/poppins/Poppins-Bold.woff2') format('woff2');
+  src: url('../../fonts/poppins/Poppins-Bold.woff') format('woff');
+}
+
+// Playfair Display Regular
+@font-face {
+  font-family: 'Playfair Display';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/playfairDisplay/Playfair-Display-Regular.woff2') format('woff2');
+  src: url('../../fonts/playfairDisplay/Playfair-Display-Regular.woff') format('woff');
+}
+
+// Playfair Display SemiBold
+@font-face {
+  font-family: 'Playfair Display';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../fonts/playfairDisplay/Playfair-Display-SemiBold.woff2') format('woff2');
+  src: url('../../fonts/playfairDisplay/Playfair-Display-SemiBold.woff') format('woff');
+}
+
+// Playfair Display Bold
+@font-face {
+  font-family: 'Playfair Display';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/playfairDisplay/Playfair-Display-Bold.woff2') format('woff2');
+  src: url('../../fonts/playfairDisplay/Playfair-Display-Bold.woff') format('woff');
+}
+
+// Stolzl Thin
+@font-face {
+  font-family: 'Stolzl';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100;
+  src: url('../../fonts/stolzl/Stolzl-Thin.woff2') format('woff2');
+  src: url('../../fonts/stolzl/Stolzl-Thin.woff') format('woff');
+}
+
+// Stolzl Light
+@font-face {
+  font-family: 'Stolzl';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../fonts/stolzl/Stolzl-Light.woff2') format('woff2');
+  src: url('../../fonts/stolzl/Stolzl-Light.woff') format('woff');
+}
+
+// Stolzl Regular
+@font-face {
+  font-family: 'Stolzl';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/stolzl/Stolzl-Regular.woff2') format('woff2');
+  src: url('../../fonts/stolzl/Stolzl-Regular.woff') format('woff');
+}
+
+// Stolzl Medium
+@font-face {
+  font-family: 'Stolzl';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../fonts/stolzl/Stolzl-Medium.woff2') format('woff2');
+  src: url('../../fonts/stolzl/Stolzl-Medium.woff') format('woff');
+}
+
+// Stolzl Bold
+@font-face {
+  font-family: 'Stolzl';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/stolzl/Stolzl-Bold.woff2') format('woff2');
+  src: url('../../fonts/stolzl/Stolzl-Bold.woff') format('woff');
+}
+
+// Quincy Regular
+@font-face {
+  font-family: 'Quincy';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/stolzl/Quincy-CF-Regular.woff2') format('woff2');
+  src: url('../../fonts/stolzl/Quincy-CF-Regular.woff') format('woff');
+}
+
+/****************************************************************************
+  Body
+ ***************************************************************************/
+ html {
+  box-shadow: none !important;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  // overflow-x: hidden;
+}
+
+ body {
+  @include font-size($font-sizes20);
+  // background: linear-gradient(154.77deg, rgba(0, 147, 121, 0.1), rgba(229, 244, 242, 0.5) 52.39%);
+  color: $text-color;
+  font-family: $font-primary;
+}
+
+.container {  
+  max-width: 1200px;
+}
+
+.container-fluid {  
+  max-width: 1600px;
+}
+
+.container-full {
+  margin: auto;  
+  max-width: 2600px;
+}
+
+.container,
+.container-fluid,
+.container-full {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  font-weight: $regular-weight;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0 0 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/****************************************************************************
+  Links
+ ***************************************************************************/
+a {
+  @include transition(all, 0.2s, ease, 0s);
+  @include font-size($font-sizes16);
+  color: $secondary-color;
+  font-family: $font-primary;
+  font-weight: $regular-weight;
+  outline: none;
+  text-decoration: none;
+
+  &:focus-visible,
+  &:focus-within,
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+
+  &:focus-visible {        
+    @include focus-states(after,$primary-color,8,8);
+  }
+
+  span {
+    @include transition(all, 0.2s, ease, 0s);
+  }
+}
+
+strong,
+b {
+  font-weight: $medium-weight;
+}
+
+/* Code for Firefox */
+:-moz-selection {
+  background: $primary-color;
+  color: $white;
+}
+
+::selection {
+  background: $primary-color;
+  color: $white;
+}
+
+/****************************************************************************
+  Headings
+ ***************************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $text-color;
+  font-weight: $medium-weight;
+  margin-bottom: 1rem;
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: 2rem;
+  }
+}
+
+h1 {
+  @include font-size($font-sizes64);
+  font-family: $font-secondary;
+  font-weight: $bold-weight;
+}
+
+h2 {
+  @include font-size($font-sizes50);
+}
+
+h3 {
+  @include font-size($font-sizes36);
+}
+
+h4 {
+  @include font-size($font-sizes20);
+}
+
+h5 {
+  @include font-size($font-sizes18);
+}

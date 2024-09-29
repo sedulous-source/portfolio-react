@@ -1,0 +1,90 @@
+/*******************************************************************************
+* Button
+*******************************************************************************/
+.btn {
+  @include font-size($font-sizes18);
+  @include transition(all, 0.3s, ease-in-out, 0s);
+  @include inline-block();
+  background-color: $primary-color;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: $white;
+  margin: 0;
+  outline: 0;
+  padding: 8px 15px;
+  position: relative;
+  white-space: normal;
+  z-index: 0;
+  
+  &::after {
+    @include transition(all, 0.3s, ease-in-out, 0s);
+    background-color: $secondary-color;
+    content: "";
+    display: block;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $primary-color;
+    
+    &::after {
+      height: 100%;
+    }
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn.btn--secondary {
+  background-color: $secondary-color;
+
+  &::after {
+    background-color: $primary-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $secondary-color;
+    color: $white;
+  }
+}
+
+.btn.btn--light {
+  background-color: $white;
+  color: $text-color;
+
+  &::after {
+    background-color: $primary-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $white;
+    color: $white;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .btn {
+    padding: 9px 25px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .btn.btn--lg {
+    padding: 15px 50px;
+  }
+}
