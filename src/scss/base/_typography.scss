@@ -163,18 +163,18 @@
   max-width: 1200px;
 }
 
-.container-fluid {  
-  max-width: 1600px;
-}
-
 .container-full {
   margin: auto;  
-  max-width: 2600px;
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.container,
-.container-fluid,
-.container-full {
+.container-fluid {
+  padding-inline: 12px;
+}
+
+.container {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -207,7 +207,7 @@ ul {
   Links
  ***************************************************************************/
 a {
-  @include transition(all, 0.2s, ease, 0s);
+  @include transition(all, 0.3s, ease, 0s);
   @include font-size($font-sizes16);
   color: $secondary-color;
   font-family: $font-primary;
@@ -224,10 +224,6 @@ a {
 
   &:focus-visible {        
     @include focus-states(after,$primary-color,8,8);
-  }
-
-  span {
-    @include transition(all, 0.2s, ease, 0s);
   }
 }
 

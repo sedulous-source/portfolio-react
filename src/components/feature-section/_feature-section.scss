@@ -1,5 +1,10 @@
 .feature-section {
-  background: linear-gradient(154.77deg, rgba(0, 147, 121, 0.1), rgba(229, 244, 242, 0.5) 52.39%);
+  background-attachment: fixed;
+  // background: linear-gradient(154.77deg, rgba(0, 147, 121, 0.1), rgba(229, 244, 242, 0.5) 52.39%);
+  background-image: url('../../images/landing-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .feature-wrapper {
@@ -92,13 +97,13 @@
   transition: 0.4s, background-position 0s;
   --p: 100%;
 
+  a {
+    color: $text-color;
+  }
+
   &:hover {
     --p: 0%;
-    background-color: $text-color;
-
-    a {
-      color: $white;
-    }
+    background-color: $light-blue-color;
   }
 }
 
@@ -133,20 +138,20 @@
 
 .feature-item-wrapper--title {
   background: $primary-color;
-  box-shadow: inset 0px 0px 50px -15px #c62000;
 
   h2 {
     color: $white;
     font-family: $font-quincy;
     margin-bottom: 0;
     user-select: none;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 28px;
+      line-height: 33px;
+    }
     
     @include media-breakpoint-up(md) {
       letter-spacing: 3px;
     }
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 50px -15px #000;
   }
 }

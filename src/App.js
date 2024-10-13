@@ -1,21 +1,12 @@
-import Navbar from './components/header';
-import Footer from './components/footer';
-import LandingSection from './components/landing-section';
-import FeatureSection from './components/feature-section';
-import SliderSection from './components/slider';
+import React from 'react';
+import AppRouter from './router';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Navbar />
-      <main id="main" className="main" role="main">
-        <LandingSection />
-        <SliderSection />
-        <FeatureSection />
-      </main>
-      <Footer />
-    </>
+    <div>
+      <AppRouter />
+    </div>
   );
-}
+};
 
 export default App;

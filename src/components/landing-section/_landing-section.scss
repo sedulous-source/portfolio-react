@@ -1,50 +1,6 @@
-// .landing-section {
-//   // background: linear-gradient(to right, rgb(236 91 83), rgb(255 255 255 / 50%)), url(https://www.rammaheshwari.com/assets/svg/common-bg.svg);
-
-//   &__image {
-//     background-attachment: fixed;
-//     background-image: url('../../images/Adarsh-img.jpeg');
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     display: block;
-//     height: calc(100vh - 125px);
-
-//     // img {
-//     //   border-radius: 180px 0 180px 0;
-//     //   image-rendering: -webkit-optimize-contrast;
-//     // }
-
-//     // @include media-breakpoint-up(md) {
-//     //   padding-left: 2rem;
-//     //   text-align: right;
-//     // }
-
-//     @include media-breakpoint-up(lg) {
-//       background-position: 100%;
-//       background-size: contain;
-//     }
-//   }
-
-//   .btn {
-//     margin-top: 1rem;
-//   }
-
-//   &__content {
-//     margin-bottom: 3rem;
-//     padding: 1rem;
-
-//     @include media-breakpoint-up(sm) {
-//       padding: 3rem;
-//     }
-
-//     @include media-breakpoint-up(xxl) {
-//       margin-bottom: 0;
-//       padding: 0 0 0 7rem;
-//     }
-//   }
-// }
-
+/****************************************************
+Landing Section
+****************************************************/
 .landing-section {
   background: $primary-light-color;
   position: relative;
@@ -53,18 +9,19 @@
     position: relative;
 
     img {
-      border-radius: 25% 25% 0 0;
-      box-shadow: 0 2px 4px rgba(33, 51, 67, .12);
-      image-rendering: -webkit-optimize-contrast;
+      // border-radius: 25% 25% 0 0;
+      // box-shadow: 0 2px 4px rgba(33, 51, 67, .12);
+      clip-path: circle();
+      imageRendering: -webkit-optimize-contrast;
       object-fit: cover;
       width: 100%;
     }
   }
 
   &__content {
+    margin-top: 25px;
     position: relative;
     z-index: 1;
-    margin-top: 25px;
 
     @include media-breakpoint-up(lg) {
       margin-top: 0;
@@ -75,21 +32,25 @@
     position: absolute;
 
     &.blob--small-stars {
-      display: none;
+      bottom: -60px;
+      // display: none;
+      right: 0;
       
       @include media-breakpoint-up(lg) {
+        bottom: auto;
         display: inline-block;
-        left: -50px;
-        top: -30px;
-
+        left: 10px;
+        right: auto;
+        top: -10px;
+        
         svg {
           max-width: 70px;
         }
       }
-
+      
       @include media-breakpoint-up(xxl) {
-        left: -25px;
-        top: -15px;
+        left: 0;
+        top: -30px;
 
         svg {
           max-width: 100px;

@@ -13,8 +13,11 @@ $btn-box-shadow: none;
 //  Custom variables
 //***************************************************************************/
 :root {
-  --primary-color: #ff5c35;
-  --secondary-color: #2e475d;
+  // --primary-color: #ff5c35;
+  // --primary-color: #5c2ede;
+  --primary-color: #3a85e6;
+  --secondary-color: #ff5c35;
+  // --secondary-color: #2e475d;
   --text-color: #213343;
   --gray-color: #eaf0f6;
 }
@@ -24,12 +27,34 @@ $secondary-color: var(--secondary-color);
 $text-color: var(--text-color);
 $gray-color: var(--gray-color);
 $primary-light-color: #fef4ea;
+// $primary-light-color: #f9f7ff;
 $light-color: #f5f5f5;
 $dark-color: #151515;
 $medium-gray-color: #808080;
 $dark-gray-color: #505050;
 $body-color: #fefafa;
 $gradient-bg: linear-gradient(90deg, #c62000, #ff3d00);
+$orange-color: #ed6a13;
+$green-color: #036248;
+$blue-color: #0e88ca;
+$dark-blue-color: #005489;
+$lila-color: #8e3684;
+$pink-color: #f0c6d7;
+$light-blue-color: #b3d6e9;
+$yellow-color: #ffd743;
+$light-green-color: #c8d44b;
+$grey-color: #f9f9f9;
+$dark-grey-color: #dedede;
+$violet-color: #5c2ede;
+$orange-hover-color: #d45f11;
+$green-hover-color: #024735;
+$blue-hover-color: #0c77b0;
+$lila-hover-color: #752D6D;
+$yellow-hover-color: #f2cb3f;
+$yellow-hover-color: #f2cb3f;
+$light-green-hover-color: #bcc746;
+$light-blue-hover-color: #A9C9DB;
+$pink-hover-color: #e3bccc;
 
 //****************************************************************************
 //  Font Weight
@@ -39,3 +64,27 @@ $regular-weight: 400;
 $medium-weight: 500;
 $semi-bold-weight: 600;
 $bold-weight: 700;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px,
+  xxxl: 1920px
+);
+
+$grid-gutter-width: 15px;
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "156x85": calc(85 / 156 * 100%),
+  "412x341": calc(341 / 412 * 100%),
+  "200x164": calc(164 / 200 * 100%),
+  "409x387": calc(387 / 409 * 100%),
+  "572x405": calc(405 / 572 * 100%)
+);

@@ -50,8 +50,7 @@ $font-sizes30: (
 );
 
 $font-sizes24: (
-  null : (18px, 20px),
-  large : (20px, 28px),
+  null : (20px, 28px),
   x-large : (22px, 30px),
   xx-large : (24px, 42px)
 );
@@ -69,14 +68,14 @@ $font-sizes20: (
 );
 
 $font-sizes18: (
-  null : (18px, 28px)
+  null : (18px, 28px),
+  x-large : (18px, 28px)
 );
 
 $font-sizes16: (
-  null : (16px, 26px)
+  null : (16px, 20px)
 );
 
 $font-sizes14: (
-  null : (12px, 16px),
-  large : (14px, 28px)
+  null : (14px, 28px)
 );

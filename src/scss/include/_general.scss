@@ -11,5 +11,208 @@
   background-repeat: no-repeat;
   background-size: contain;
   font-weight: $medium-weight;
-  padding-left: 3rem;
+  padding-left: 1.7rem;
+  
+  @include media-breakpoint-up(lg) {
+    padding-left: 2.5rem;
+  }
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+  color: $white;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $white;
+  }
+
+  ul li::before {
+    background-color: $white;
+  }
+}
+
+.bg-orange {
+  background-color: $orange-color !important;
+  color: $white;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $white;
+  }
+
+  ul li::before {
+    background-color: $white;
+  }
+}
+
+.bg-green {
+  background-color: $green-color;
+  color: $light-blue-color;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $light-blue-color;
+  }
+
+  ul li::before {
+    background-color: $light-blue-color;
+  }
+}
+
+.bg-blue {
+  background-color: $blue-color;
+  color: $white;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $white;
+  }
+
+  ul li::before {
+    background-color: $white;
+  }
+}
+
+.bg-lila {
+  background-color: $lila-color;
+  color: $white;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $white;
+  }
+
+  ul li::before {
+    background-color: $white;
+  }
+}
+
+.bg-pink {
+  background-color: $pink-color;
+  color: $lila-color;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $lila-color;
+  }
+
+  ul li::before {
+    background-color: $lila-color;
+  }
+}
+
+.bg-light-blue {
+  background-color: $light-blue-color;
+  color: $dark-blue-color;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $dark-blue-color;
+  }
+
+  ul li::before {
+    background-color: $dark-blue-color;
+  }
+}
+
+.bg-yellow {
+  background-color: $yellow-color;
+  color: $green-color;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $green-color;
+  }
+
+  ul li::before {
+    background-color: $green-color;
+  }
+}
+
+.bg-light-green {
+  background-color: $light-green-color;
+  color: $green-color;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $green-color;
+  }
+
+  ul li::before {
+    background-color: $green-color;
+  }
+}
+
+.bg-violet {
+  background-color: $violet-color;
+  color: $white;
+
+  ol li::before,
+  .btn-link,
+  .btn-arrow.btn-link::after {
+    color: $white;
+  }
+
+  ul li::before {
+    background-color: $white;
+  }
+}
+
+.body-text-color {
+  color: $text-color;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.green-color {
+  color: $green-color;
+}
+
+.blue-color {
+  color: $blue-color;
+}
+
+.lila-color {
+  color: $lila-color;
+}
+
+.pink-color {
+  color: $pink-color;
+}
+
+.lightblue-color {
+  color: $light-blue-color;
+}
+
+.yellow-color {
+  color: $yellow-color;
+}
+
+.lightgreen-color {
+  color: $light-green-color;
+}
+
+.darkblue-color {
+  color: $dark-blue-color;
+}
+
+.mark {
+  background-color: $dark-grey-color;
+  color: inherit;
+}
+
+.content-section {
+  margin-bottom: 40px;
 }
