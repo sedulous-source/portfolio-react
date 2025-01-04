@@ -1,4 +1,6 @@
 .card-section {
+    background-color: rgba($light-blue-color, 0.1);
+
     .g-4 {
         --bs-gutter-y: 1.8rem;
         --bs-gutter-x: 1.8rem;
@@ -6,6 +8,7 @@
 
     .card-teaser {
         align-items: center;
+        background-color: $white;
         box-shadow: 0 3px 22px -1px rgba($dark-blue-color, 0.1);
         column-gap: 40px;
         cursor: pointer;
@@ -24,5 +27,11 @@
         &:hover {
             transform: translateY(-10px);
         }
+    }
+
+    .modal-fullscreen {
+        height: 80%;
+        margin: 1.75rem auto auto;
+        width: 80vw;
     }
 }

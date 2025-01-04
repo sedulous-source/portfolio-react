@@ -17,8 +17,8 @@ function Home() {
       <div id="body">
         <FeatureSection />
         <BrandSection />
-        <Card />
         <TextWithImage />
+        <Card />
         <Accordion />
       </div>
     </>
