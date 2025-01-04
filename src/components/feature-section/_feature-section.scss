@@ -84,6 +84,7 @@
   align-items: center;
   aspect-ratio: 1 / 1.1;
   background: linear-gradient($white 0 0) calc(100% - var(--p,0%)) / var(--p, 0) no-repeat;
+  background-color: $light-blue-color;
   bottom: 0;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   display: flex;
@@ -103,7 +104,6 @@
 
   &:hover {
     --p: 0%;
-    background-color: $light-blue-color;
   }
 }
 

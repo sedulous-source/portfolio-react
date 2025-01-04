@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import FeatureSection from '../../components/feature-section';
-import SliderSection from '../../components/slider';
+import BrandSection from '../../components/brand';
+import Card from '../../components/card';
 import TextWithImage from '../../components/text-with-image';
 import HeroMasonary from '../../components/hero-masonary';
-import AccordionDefault from '../../components/accordion/accordionDefault';
+import Accordion from '../../components/accordion';
 
 function Home() {
   useEffect(() => {
@@ -15,9 +16,10 @@ function Home() {
       <HeroMasonary />
       <div id="body">
         <FeatureSection />
-        <SliderSection />
+        <BrandSection />
+        <Card />
         <TextWithImage />
-        <AccordionDefault />
+        <Accordion />
       </div>
     </>
   );

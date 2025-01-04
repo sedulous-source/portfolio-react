@@ -25,23 +25,23 @@ Accordion
       &::after {
         background-color: $primary-color;
         background-image: none;
-        height: 1rem;
+        height: 15px;
         mask-position: center center;
         mask-repeat: no-repeat;
         mask-size: cover;
-        width: 2rem;
+        width: 45px;
       }
     }
 
     &::after {
       background-color: $text-color;
       background-image: none;
-      height: 1rem;
-      mask-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDQ4IDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAxLjQgMzc0LjZjMTIuNSAxMi41IDMyLjggMTIuNSA0NS4zIDBsMTYwLTE2MGMxMi41LTEyLjUgMTIuNS0zMi44IDAtNDUuM3MtMzIuOC0xMi41LTQ1LjMgMEwyMjQgMzA2LjcgODYuNiAxNjkuNGMtMTIuNS0xMi41LTMyLjgtMTIuNS00NS4zIDBzLTEyLjUgMzIuOCAwIDQ1LjNsMTYwIDE2MHoiLz48L3N2Zz4=');
+      height: 15px;
+      mask-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNWY2MzY4IiB2aWV3Qm94PSIwIC05NjAgOTYwIDk2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNDgwLTM0NEwyNDAtNTg0bDU2LTU2IDE4NCAxODQgMTg0LTE4NCA1NiA1Ni0yNDAgMjQweiIvPjwvc3ZnPg==');
       mask-position: center center;
       mask-repeat: no-repeat;
       mask-size: cover;
-      width: 2rem;
+      width: 45px;
     }
 
     &.icon--none::after {

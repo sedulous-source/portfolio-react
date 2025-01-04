@@ -6,6 +6,8 @@ const Accordion = () => {
     <>
       <section className="accordion-section frame-space-before-medium frame-space-after-medium">
         <div className="container">
+        <h2 className="text-center mb-3">FAQs</h2>
+        <p className="lead text-center">Here is a list of our expertisation in developing websites for any platform.</p>
           <div className="accordion accordion--plus accordion--outline" id="accordionExample">
             <div className="accordion-item">
               <div className="accordion-header">
@@ -32,6 +34,7 @@ const Accordion = () => {
                 </div>
               </div>
             </div>
+            
             <div className="accordion-item">
             <div className="accordion-header">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
