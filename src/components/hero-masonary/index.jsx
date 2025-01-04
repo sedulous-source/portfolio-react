@@ -1,36 +1,8 @@
 import React, { useEffect } from 'react';
-import Shuffle from 'shufflejs';
 import Images from '../../Images';
 import Video from '../../video/hero-video.mp4';
 
 const HeroMasonrySection = () => {
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
-
-    const handleTabletChange = (e) => {
-      if (e.matches) {
-        document.querySelectorAll('.hero-masonry-grid').forEach((element) => {
-          new Shuffle(element, {
-            itemSelector: '.hero-masonry-item',
-            sizer: '.my-sizer-element',
-            buffer: 1,
-          });
-        });
-      }
-    };
-
-    // Initial check
-    handleTabletChange(mediaQuery);
-
-    // Register event listener
-    mediaQuery.addListener(handleTabletChange);
-
-    // Cleanup function
-    return () => {
-      mediaQuery.removeListener(handleTabletChange);
-    };
-  }, []);
-
   // Carousel functionality
   useEffect(() => {
     let myIndex = 0;
@@ -90,9 +62,9 @@ const HeroMasonrySection = () => {
   return (
     <section className="hero-masonry-section">
       <div className="container-fluid">
-        <div className="row hero-masonry-grid">
-          <div className="col-lg-6 hero-masonry-item hero-masonry-item--first">
-            <div className="hero-masonry-teaser hero-masonry-teaser--large">
+        <div className="hero-masonry-grid hero-masonry-grid--css">
+          <div className="hero-masonry-item hero-masonry-teaser--large">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-156x85">
                 <video playsInline className="object-fit-cover" ><source src={Video} type="video/mp4" /></video>
                 {/* <img className="object-fit-cover" src={Images.adarshImage} /> */}
@@ -108,8 +80,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--large">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -123,8 +95,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--large">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -138,8 +110,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--large">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -153,8 +125,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-xl-4 order-first hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--medium">
+          <div className="hero-masonry-item hero-masonry-teaser--medium">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-412x341">
                 <div className="carousel-autoplay">
                   <img className="object-fit-cover carousel-autoplay__item" src={Images.adarshImage} />
@@ -167,8 +139,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--medium">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -182,8 +154,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--medium">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -197,8 +169,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--medium">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -212,8 +184,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--medium">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -227,8 +199,8 @@ const HeroMasonrySection = () => {
             </div>
           </div>
 
-          <div className="col-6 col-md-4 col-lg-3 col-xl-2 hero-masonry-item">
-            <div className="hero-masonry-teaser hero-masonry-teaser--medium">
+          <div className="hero-masonry-item hero-masonry-teaser--small">
+            <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
@@ -241,8 +213,6 @@ const HeroMasonrySection = () => {
               </div>
             </div>
           </div>
-
-          <div className="col-1 my-sizer-element"></div>
         </div>
       </div>
     </section>

@@ -1,0 +1,282 @@
+
+@mixin select-svg($color: $white) {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+.stepper {
+  counter-reset: stepper;
+  display: flex;  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;  
+}
+
+.stepper:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Demo styles */
+
+.step {
+  align-items: center;
+  display: flex;
+  position: relative;
+
+  &:not(:last-child)::after {
+    background-color: $color-gray-light;
+    content: '';
+    height: 0.2rem;
+    margin: 0 0.5rem;
+    min-width: 0.5rem * 4;
+  }
+}
+
+.step-label__indicator::before {
+  align-items: center;
+  background: $color-gray-light;
+  border-radius: 50%;
+  color: $white;
+  content: counter(stepper);
+  counter-increment: stepper;
+  display: inline-flex;
+  font-weight: $font-weight-bold;
+  height: 3rem;
+  justify-content: center;
+  line-height: normal;
+  width: 3rem;
+}
+
+.step--running .step-label__indicator::before,
+.step--completed .step-label__indicator::before {
+  background-color: $color-primary;
+}
+
+.step--completed .step-label__indicator::before {
+  @include select-svg();
+  content: '';
+}
+/* /Demo Styles */
+
+.step-label {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-brand;
+  max-width: 10rem;
+}
+
+.step-label__text {
+  color: $color-gray-medium;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.step--running {
+  .step-label__text {
+    color: $color-text;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.stepper--text {
+  align-items: flex-end;
+
+  .step::after {
+    background-color: $white;
+    border-top: 6px double $color-gray-light;
+    bottom: 12px;
+    margin: 0;
+    min-width: calc(100% - 24px);
+    position: absolute;
+    right: -38px;
+    z-index: 2;
+  }
+
+  .step-label__indicator::before {
+    background-color: transparent;
+    border: 3px solid $color-gray-light;
+    color: $color-gray-light;
+    
+    @include mq($from: m) {
+      content: '';
+    }
+  }
+
+  .step--completed::after {
+    background-color: $color-primary;
+    content: '';
+  }
+
+  .step--running .step-label__indicator::before,
+  .step--completed .step-label__indicator::before {
+    background-color: $color-primary;
+    color: $white;
+  }
+
+  .step-label__text {
+    color: $color-gray-medium;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.stepper--responsive {
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &::before {
+    color: $color-primary;
+    content: attr(data-running);
+    font-weight: $font-weight-semibold;
+    margin-left: auto;
+    order: 50;
+
+    @include mq($from: m) {
+      display: none;
+    }
+  }
+
+  &::after {
+    color: $color-gray-medium;
+    content: 'Next: ' attr(data-next);
+    flex-basis: 100%;
+    flex-grow: 1;
+    order: 50;
+    text-align: right;
+
+    @include mq($from: m) {
+      display: none;
+    }
+  }
+
+  .step--running .step-label__indicator::before,
+  .step--completed .step-label__indicator::before {
+    background-color: $color-primary;
+    color: $white;
+    line-height: 1.7;
+    transform: scale(1.15);
+
+    @include mq($from: m) {
+      line-height: normal;
+      transform: scale(1);
+    }
+  }
+
+  .step--complete,
+  .step:not(.step--running):not(:last-child) {
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+
+    @include mq($from: m) {
+      visibility: visible;
+      width: auto;
+    }
+  }
+
+  .step-label {
+    flex-direction: row;
+
+    @include mq($from: m) {
+      flex-direction: column;
+    }
+  }
+
+  .step-label__text {
+    display: none;
+
+    @include mq($from: m) {
+      display: block;
+    }
+  }
+
+  @include mq($from: m) {
+    align-items: flex-end;
+  }
+}
+
+.stepper--responsive .step--running {
+  &:not(:last-child) .step-label::after {
+    color: $color-gray-medium;
+    content: 'of';
+    font-size: $font-size-small;
+    font-weight: $font-weight-semibold;
+    padding: 0 0.5rem;
+
+    @include mq($from: m) {
+      display: none;
+    }
+  }
+}
+
+.stepper--responsive .step:not(:last-child) {
+  flex-grow: 0;
+
+  &::after {
+    display: none;
+  }
+
+  @include mq($from: m) {
+    flex-grow: 1;
+
+    &::after {
+      display: inline-block;
+    }
+  }
+}
+
+
+.stepper--number-text {
+  .step-label {
+    flex-direction: row;
+
+    @include mq($from: m) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .step-label__text {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .step-label__indicator::before {
+    background-color: $white;
+    background-size: 22px;
+    border: 1px solid $color-gray-medium;
+    color: $color-gray-light;
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+
+    @include mq($from: m) {
+      font-size: $font-size-extralarge;
+      height: 7.1rem;
+      width: 7.1rem;
+    }
+  }
+
+  .step:not(:last-child)::after {
+    background-color: $color-gray-xlight;
+    height: 1px;
+    left: 47px;
+    margin: 0;
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .step--completed .step-label__indicator::before,
+  .step--running .step-label__indicator::before {
+    background-color: $color-primary;
+    color: $white;
+  }
+}
+
+
+

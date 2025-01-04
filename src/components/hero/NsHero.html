@@ -1,0 +1,25 @@
+<section id="c{data.uid}" class="hero-section {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}" data-aos="{data.tx_mask_animation}">
+    <div class="hero{f:if(condition: '{data.tx_mask_hero_variation} == default', else: ' {data.tx_mask_hero_variation}')}{f:if(condition: '{data.tx_mask_rounded_edge}', then: ' rounded-10')}{f:if(condition: '{data.tx_mask_overlay}', then: ' {data.tx_mask_overlay}')}">
+        <div class="hero__image">
+            <f:if condition="{data.image}">
+                <f:for each="{data.image}" as="file">
+                    <f:if condition="{file.link}">
+                        <f:then>
+                            <f:link.typolink parameter="{file.link}"><f:image image="{file}" /></f:link.typolink>
+                        </f:then>
+                        <f:else>
+                            <f:image image="{file}" />
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </f:if>
+        </div>
+        <f:if condition="{data.bodytext}">
+            <div class="hero__content{f:if(condition: '{data.tx_mask_vertical_alignment}', then: ' {data.tx_mask_vertical_alignment}')}">
+                <div class="container">
+                    {data.bodytext -> f:format.html()}
+                </div>
+            </div>
+        </f:if>
+    </div>
+</section>

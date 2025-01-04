@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
 const Typography = () => {
+  useEffect(() => {
+    document.title = "Typography - My Portfolio";
+  }, []);
+
   return (
     <>
       <div className="container">

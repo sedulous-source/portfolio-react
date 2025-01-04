@@ -1,0 +1,279 @@
+// Dark Preview
+.t-dark {
+  .counter-block__text,
+  .counter-block__number-block {
+    color: $body-background;
+  }
+
+  .counter-block__icon {
+    background-color: $body-background;
+    color: $black;
+  }
+
+  .counter-block--circle-text .counter-block__inner::after,
+  .counter-block--circle .counter-block__number-block::before {
+    background-color: $color-cyan;
+  }
+
+  .counter-block--circle .counter-block__number-block::after {
+    background-color: $body-background;
+  }
+
+  .counter-block--circle .counter-block__number-block {
+    background-color: transparent;
+    border-color: $body-background;
+  }
+
+  .counter-block--circle-text .counter-block__inner {
+    border-color: $body-background;
+  }
+}
+
+.counter-block__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.counter-block__icon {
+  align-items: center;
+  background-color: $color-cyan;
+  border-radius: 50%;
+  color: $body-background;
+  display: flex;
+  font-size: 3rem;
+  height: 5.8rem;
+  justify-content: center;
+  margin-right: 0.9rem;
+  width: 5.8rem;
+}
+
+.counter-block__number-block {
+  // color: $color-text;
+  display: flex;
+  font-family: $font-family-brand;
+  font-size: 3.6rem;
+  font-weight: $font-weight-bold;
+  line-height: 4.6rem;
+  
+  @include mq($from: m) {
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+  }
+}
+
+.counter-block__number {
+  display: inline-block;
+}
+
+.counter-block__text {
+  font-family: $font-family-brand;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// circle
+.counter-block--circle {
+  display: inline-block;
+  text-align: center;
+
+  .counter-block__number-block {
+    align-items: center;
+    background-color: $color-gray-xlight;
+    border: 0.4rem solid $color-cyan;
+    border-radius: 50%;
+    display: flex;
+    font-size: 3rem;
+    font-weight: $font-weight-medium;
+    height: 10.9rem;
+    justify-content: center;
+    line-height: 4rem;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    width: 10.9rem;
+
+  }
+}
+
+.counter-block--circle .counter-block__number-block {
+  &::after {
+    background-color: $color-cyan;
+    border-radius: 50%;
+    box-shadow: 0 0.4rem 0.8rem rgba(110, 114, 114, 1);
+    content: '';
+    height: 1.4rem;
+    left: -0.2rem;
+    position: absolute;
+    top: 1.4rem;
+    width: 1.4rem;
+  }
+
+  &::before {
+    background-color: $color-gray-xlight;
+    border-radius: 50%;
+    bottom: 1.4rem;
+    content: '';
+    height: 1.4rem;
+    left: 0.3rem;
+    position: absolute;
+    width: 1.4rem;
+  }
+
+}
+
+.counter-block__inner { 
+  .counter-block__content {
+    text-align: start;
+  }
+}
+
+// circle--text
+.counter-block--circle-text {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+
+  .counter-block__inner {
+    border: 0.4rem solid $color-cyan;
+    border-radius: 50%;
+    height: 10.5rem;
+    padding-top: 1.8rem;
+    position: relative;
+    width: 10.5rem;
+  }
+
+  .counter-block__content {
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .counter-block__plus {
+    display: none;
+  }
+
+  .counter-block__number-block {
+    font-size: 3.4rem;
+    font-weight: $font-weight-normal;
+    line-height: 4.2rem;
+    width: 100%;
+  }
+
+  .counter-block__text {
+    font-size: 1.4rem;
+  }
+}
+
+.counter-block--circle-text .counter-block__inner {
+  &::after {
+    background-color: $body-background;
+    border-radius: 50%;
+    content: '';
+    height: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    z-index: 1;
+  }
+}
+
+// icon-right
+.counter-block--icon-right {
+  .counter-block__icon {
+    @include mq($from: l) {
+      margin-left: 0.9rem;
+      margin-right: 0;
+      order: 3;
+    }
+  }
+
+  .counter-block__content {
+    @include mq($from: l) {
+      text-align: right;
+    }
+  }
+}
+
+.count-number {
+  display: inline;
+}
+
+.counter-block { 
+margin-right: 1.2rem;
+}
+
+.counter-block__content { 
+  width: 15rem;
+
+  @include mq($from: m) {
+    width: 20rem;
+  }
+}
+
+.circle_percent {
+  font-size:200px; 
+  width:1em; 
+  height:1em; 
+  position: relative;
+  background: #eee; 
+  border-radius:50%; 
+  overflow:hidden; 
+  display:inline-block;
+  margin:20px;
+  }
+
+.circle_inner {
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 1em; 
+  height: 1em; 
+  clip:rect(0 1em 1em .5em);
+}
+
+.round_per {
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 1em; 
+  height: 1em; 
+  background: $color-primary; 
+  clip:rect(0 1em 1em .5em); 
+  transform:rotate(180deg);
+  transition:1.05s;
+  }
+
+.percent_more .circle_inner {
+  clip:rect(0 .5em 1em 0em);
+}
+
+.percent_more:after {
+  position: absolute;
+  left: .4em; 
+  top:0em; 
+  right: 0; 
+  bottom: 0; 
+  background: $color-primary; 
+  content:'';
+}
+
+.circle_inbox {
+  background: $white; 
+  border-radius: 50%;
+  bottom: 10px; 
+  left: 10px; 
+  position: absolute; 
+  right: 10px; 
+  top: 10px; 
+  z-index:3; 
+}
+
+.percent_text {
+  font-size: 36px; 
+  left: 50%; 
+  position: absolute; 
+  top: 50%; 
+  transform: translate(-50%,-50%); 
+  z-index: 3;
+}

@@ -13,7 +13,8 @@ const TextWithImage = () => {
             </figure>
           </div>
           <div className="text-image-teaser__content bg-pink">
-            <p>Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor.</p>
+            <h3>What is HubSpot?</h3>
+            <p>Software that's powerful, not overpowering. Seamlessly connect your data, teams, and customers on one AI-powered customer platform that grows with your business.</p>
             <a href="/" className='btn btn-link btn-arrow'>Learn More</a>
           </div>
         </div>

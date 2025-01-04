@@ -1,0 +1,153 @@
+<f:switch expression="{data.tx_mask_counter_variation}">
+    <f:case value="counter-section--circle">
+        <f:render section="CounterCircle"  arguments="{_all}" />            
+    </f:case>
+    <f:case value="counter-section--around">
+        <section class="counter-section {data.tx_mask_counter_variation} {f:if(condition: '{data.tx_mask_background_color} == none', else: ' {data.tx_mask_background_color}')}  {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: '{data.tx_mask_overlay_light}', then: 'overlay')} {data.tx_mask_text_color}" data-aos="{data.tx_mask_animation}">
+            <div class="container position-relative">
+                <div class="counters-content">
+                    <f:render section="CounterHeader"  arguments="{_all}" />
+                    <f:render section="Counters"  arguments="{_all}" />
+                </div>
+            </div>
+        </section>
+    </f:case>
+    <f:case value="counter-section--side-headline">
+        <section class="counter-section {data.tx_mask_counter_variation} {f:if(condition: '{data.tx_mask_background_color} == none', else: ' {data.tx_mask_background_color}')} {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: '{data.tx_mask_overlay_light}', then: 'overlay')} {data.tx_mask_text_color}" data-aos="{data.tx_mask_animation}">
+            <div class="container position-relative">
+                <div class="counters-content">
+                    <f:render section="CounterHeader"  arguments="{_all}" />
+                    <f:render section="Counters"  arguments="{_all}" />
+                </div>
+            </div>
+        </section>
+    </f:case>
+    <f:case value="counter-section--with-background">
+        <section class="counter-section {data.tx_mask_counter_variation} {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: '{data.tx_mask_overlay_light}', then: 'overlay')} {data.tx_mask_text_color}" data-aos="{data.tx_mask_animation}">
+            <f:render section="CounterBgImage"  arguments="{_all}" />
+            <div class="container">
+                <div class="counters-content">
+                    <f:render section="Counters"  arguments="{_all}" />
+                </div>
+            </div>
+        </section>
+    </f:case>
+    <f:defaultCase>
+        <section class="counter-section {data.tx_mask_counter_variation} {f:if(condition: '{data.tx_mask_background_color} == none', else: ' {data.tx_mask_background_color}')} {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: '{data.tx_mask_overlay_light}', then: 'overlay')} {data.tx_mask_text_color}" data-aos="{data.tx_mask_animation}">
+            <div class="container position-relative">
+                <div class="counters-content">                    
+                    <f:render section="Counters"  arguments="{_all}" />
+                </div>
+            </div>
+        </section>
+    </f:defaultCase>    
+</f:switch>
+
+
+
+<f:section name="CounterHeader">
+    <f:if condition="{data.tx_mask_header_bg_image}">
+        <f:for each="{data.tx_mask_header_bg_image}" as="file">
+            <f:variable name="headerBgImg">{f:uri.image(image: '{file}')}</f:variable>
+        </f:for>
+    
+        <f:variable name="headerBgStyle">background-image: url({headerBgImg}); background-position: center; background-size: cover;</f:variable>
+    </f:if>
+
+    <f:if condition="{data.header} || {data.tx_mask_header_bg_image}">
+        <div class="counter-section__headline" style="{headerBgStyle}">
+            <h2 class="headline headline--2">{data.header}</h2>
+        </div>        
+    </f:if> 
+</f:section>
+
+<f:section name="CounterIcon">
+    <div class="counter-block counter-block--icon">               
+        <f:for each="{data_item.tx_mask_icons_items}" as="data_item_item">
+            <div class="counter-block__icon">
+                <i class="{data_item_item}"></i>
+            </div>  
+        </f:for>                           
+    </div>                    
+</f:section>
+
+<f:section name="Counters">
+    <f:if condition="{data.tx_mask_counters}">
+        <div class="counter-section__items">
+            <f:for each="{data.tx_mask_counters}" as="data_item">
+                <div class="counter-section__item">
+                    <div class="counter-block">
+                        <div class="counter-block__inner">                            
+                            <f:render section="CounterIcon" arguments="{_all}" />
+                            <div class="counter-block__content">
+                                <f:if condition="{data_item.tx_mask_counter_number}">                                    
+                                    <div class="counter-block__number-block" data-module="countup">
+                                        <p class="counter timer count-number" data-countup-number="{data_item.tx_mask_counter_number}">{data_item.tx_mask_counter_number}</p>
+                                        <f:if condition="{data_item.tx_mask_counter_append}">                                            
+                                            <span class="counter-block__plus">{data_item.tx_mask_counter_append}</span>
+                                        </f:if>
+                                    </div>
+                                </f:if>        
+                                <f:if condition="{data_item.tx_mask_counter_title}">
+                                    <div class="text counter-block__text"><p>{data_item.tx_mask_counter_title}</p></div>                                                            
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </f:for>
+        </div> 
+    </f:if>
+</f:section>
+
+<f:section name="CounterBgImage">
+    <f:if condition="{data.tx_mask_bg_image}">
+        <f:for each="{data.tx_mask_bg_image}" as="file">
+            <div class="counter-section__image">
+                <div class="image loading">
+                    <img src="data:," data-src="{f:uri.image(image: '{file}')}" class="image__img js-lazyload" alt="{file.alternative}" title="{file.title}">
+                </div>
+            </div>
+        </f:for>    
+    </f:if>
+</f:section>
+
+<f:section name="CounterCircle">
+    <section class="counter-section {data.tx_mask_counter_variation} {f:if(condition: '{data.tx_mask_background_color} == none', else: ' {data.tx_mask_background_color}')}  {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: '{data.tx_mask_overlay_light}', then: 'overlay')} {data.tx_mask_text_color}" data-aos="{data.tx_mask_animation}">
+        <div class="container position-relative">
+            <div class="counters-content">
+                <f:render section="CounterHeader"  arguments="{_all}" />
+                <f:render section="CounterContent"  arguments="{_all}" />
+                <f:if condition="{data.tx_mask_counters}">
+                    <div class="counter-section__items">
+                        <f:for each="{data.tx_mask_counters}" as="data_item">
+                            <div class="counter-section__item">                                
+                            <div class="circle_percent" data-module="countup" data-percent="{data_item.tx_mask_counter_number}">
+                                <div class="circle_inner">
+                                    <div class="round_per"></div>
+                                </div>
+                                <div class="circle_inbox">
+                                <div class="counter-block__number">
+                                    <span class="countup" data-countup-number="{data_item.tx_mask_counter_number}"></span><span class="counter-block__plus">{data_item.tx_mask_counter_append}</span>
+                                </div>
+                                </div>
+                              </div>                         
+                            </div>
+                            
+                        </f:for>
+                    </div> 
+                </f:if>
+            </div>
+        </div>
+    </section>       
+</f:section>
+
+<f:section name="CounterContent">
+    <f:if condition="{data.bodytext}">
+        <div class="counter-section__text">
+            <div class="text">
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+        </div>
+    </f:if>  
+</f:section>

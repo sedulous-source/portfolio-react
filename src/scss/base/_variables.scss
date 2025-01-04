@@ -15,15 +15,17 @@ $btn-box-shadow: none;
 :root {
   // --primary-color: #ff5c35;
   // --primary-color: #5c2ede;
-  --primary-color: #3a85e6;
+  --primary-color: #7d2ae8;
   --secondary-color: #ff5c35;
   // --secondary-color: #2e475d;
+  --tertiary-color: #053f5c;
   --text-color: #213343;
   --gray-color: #eaf0f6;
 }
 
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
+$tertiary-color: var(--tertiary-color);
 $text-color: var(--text-color);
 $gray-color: var(--gray-color);
 $primary-light-color: #fef4ea;
@@ -33,7 +35,7 @@ $dark-color: #151515;
 $medium-gray-color: #808080;
 $dark-gray-color: #505050;
 $body-color: #fefafa;
-$gradient-bg: linear-gradient(90deg, #c62000, #ff3d00);
+$gradient-bg: radial-gradient(93.21% 322.59% at 1.42% 4.44%,#00c4cc 0,#5a32fa 52.5%,#7d2ae8 100%) center 0 no-repeat;
 $orange-color: #ed6a13;
 $green-color: #036248;
 $blue-color: #0e88ca;

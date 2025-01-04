@@ -77,6 +77,22 @@ button:focus {
   }
 }
 
+.button.button--gradient {
+  background: $gradient-bg;
+  color: $white;
+
+  &::after {
+    background: $white;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $gradient-bg;
+    color: $primary-color;
+  }
+}
+
 .button.button--outline {
   background-color: $white;
   border: 2px solid $primary-color;
@@ -124,7 +140,7 @@ button:focus {
   box-shadow: none;
   color: $white;
   display: inline-flex;
-  font-weight: $bold-weight;
+  font-weight: $medium-weight;
   margin: 0;
   outline: 1px solid;
   outline-color: transparent;

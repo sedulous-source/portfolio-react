@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import NotFound from './pages/NotFound/NotFound';
 import Header from './components/header';
 import Footer from './components/footer';
+import AccordionPage from './pages/Elements/AccordionPage';
 
 const AppRouter = () => {
   return (
@@ -18,6 +19,8 @@ const AppRouter = () => {
           <Route path="/about" element={<About />} />
           <Route path="/typography" element={<Typography />} />
           <Route path="*" element={<NotFound />} /> {/* Catch-all for 404 */}
+          {/* Elements */}
+          <Route path="/accordion" element={<AccordionPage />} />
         </Routes>
       </main>
       <Footer />

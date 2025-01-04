@@ -1,0 +1,117 @@
+/*********************************************************************
+Icon And Text
+*********************************************************************/
+.icon-and-text {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3.5rem;
+  
+  &.overlap-top {
+    max-width: 90%;
+  
+    @include mq($from: l) {
+      max-width: 100%;
+    }
+  }
+
+
+  .icon-and-text-slider {
+    box-shadow: 0px 8px 16px -5px rgba($black, 0.1);
+    max-height: 100%;
+    min-height: 198px;
+    padding: 0;
+
+    .dark & {
+      background-color: $color-dark;
+      box-shadow: 0 0 0.1rem $color-gray-light;
+    }
+  }
+
+  .flickity-cell:last-child {
+    .icon-and-text-slide { 
+      border-right:none;
+    }  
+  }
+
+  .icon-and-text-slide {
+    align-items: center;
+    display: flex;
+    margin: 4rem 0;
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+
+  .col-12 + .col-12 {
+    .icon-and-text-slide {
+      border-left: 2px solid $color-gray-light;
+    }
+  }
+
+  .col:last-child {
+    .icon-and-text-slide {
+      border-right: 0;
+    }
+  }
+
+  &.overlap-top {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 20;
+
+    @include mq($from: l) {
+      margin-top: -10rem;
+    }
+  }
+
+  .icon-and-text__icon {
+    font-size: $font-size-jumbo;
+  }
+
+  .icon-and-text__icon,
+  .icon-and-text__content {
+    padding: 0 1.5rem;
+  }
+
+  .icon-and-text__content {
+    .headline--3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .flickity-button {
+    background-color: transparent;
+    background: transparent;
+    color: $color-primary;
+    top: 0;
+    transform: translate(0, 0);
+
+    &:hover {
+      background-color: transparent;
+      background: transparent;
+    }
+
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+
+    &.previous {
+      left: auto;
+      right: 35px;  
+    }
+
+    &.next {
+      right: 0;
+    }
+  }
+
+  .flickity-page-dot {
+    background-color: $color-primary;
+    opacity: 0.25;
+    
+    &.is-selected {
+      background-color: $color-primary;
+      opacity: 1;
+    }
+  }
+}

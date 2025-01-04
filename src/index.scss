@@ -3,7 +3,7 @@
 @import 'scss/base/variables';
 
 // frameworks
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons';
 @import '../node_modules/swiper/swiper';
 @import '../node_modules/swiper/modules/navigation';
@@ -24,3 +24,4 @@
 @import 'components/slider/slider';
 @import 'components/text-with-image/text-with-image';
 @import 'components/hero-masonary/hero-masonary';
+@import 'components/accordion/accordion';
