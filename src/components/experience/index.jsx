@@ -22,9 +22,9 @@ const Experience = () => {
                             </span>
                         </h4>
                         <ul>
-                            <li>Developed responsive web applications using HTML, CSS, Bootstrap andJavaScript to improve user experience and enhance functionality.</li>
-                            <li>Collaborated with design and backend teams to create visually appealing andhighly functional websites for clients.</li>
-                            <li>Implemented UI/UX best practices and conducted user testing to optimizewebsite performance and drive engagement.</li>
+                            <li>Developed responsive web applications using HTML, CSS, Bootstrap and JavaScript to improve user experience and enhance functionality.</li>
+                            <li>Collaborated with design and backend teams to create visually appealing and highly functional websites for clients.</li>
+                            <li>Implemented UI/UX best practices and conducted user testing to optimize website performance and drive engagement.</li>
                             <li>Maintained and updated existing websites by troubleshooting and debuggingcode to ensure seamless operation across multiple browsers and devices.</li>
                         </ul>
                     </div>
@@ -38,9 +38,9 @@ const Experience = () => {
                             </span>
                         </h4>
                         <ul>
-                            <li>Provided proactive technical support to end users via phone, email,and remote desktop tools, resolving over approx. 120 tickets per weekwith a 99% customer satisfaction rate.</li>
-                            <li>Collaborated with cross-functional teams to troubleshoot andaddress complex technical issues, resulting in a 20% decrease inoverall service downtime.</li>
-                            <li>Implemented and maintained IT infrastructure upgrades, includingsoftware installations and network configurations, resulting inimproved system performance and efficiency.</li>
+                            <li>Provided proactive technical support to end users via phone, email,and remote desktop tools, resolving over approx. 120 tickets per week with a 99% customer satisfaction rate.</li>
+                            <li>Collaborated with cross-functional teams to troubleshoot and address complex technical issues, resulting in a 20% decrease in overall service downtime.</li>
+                            <li>Implemented and maintained IT infrastructure upgrades, including software installations and network configurations, resulting in improved system performance and efficiency.</li>
                             <li><strong>Achievement:</strong> Rising Star of the month.</li>
                         </ul>
                     </div>
