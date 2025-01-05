@@ -441,7 +441,7 @@ body.menu--open {
   .dropdown-megamenu {
     backdrop-filter: blur(30px);
     background-color: rgba($white, 0.5);
-    border-top: 2px solid $primary-color;
+    // border-top: 2px solid $primary-color;
     // background-color: $white;
     box-shadow: 0 0px 32px 10px rgba(33,51,67,0.2);
     left: 0;

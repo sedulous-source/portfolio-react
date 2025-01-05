@@ -1,0 +1,101 @@
+.experience-section {
+    .frame-space-after-extra-large {
+        padding-bottom: 320px;
+    }
+
+    .experience-teaser {
+        background-color: $white;
+        box-shadow: 0 3px 22px -1px rgba($dark-color, 0.1);
+        margin-top: -300px;
+        padding: 30px 20px;
+
+        &__content {
+            & + .experience-teaser__content {
+                border-top: 1px solid rgba($dark-blue-color, 0.1);
+            }
+            &-header {
+                color: $dark-blue-color;
+                margin-bottom: 30px;
+                position: relative;
+
+                &::before {
+                    background-color: $dark-blue-color;
+                    bottom: 0;
+                    content: "";
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    width: 60px;
+                }
+            }
+
+            &-subheader {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                row-gap: 15px;
+                text-transform: uppercase;
+
+                svg {
+                    vertical-align: text-bottom;
+                }
+
+                .link {
+                    @include font-size($font-sizes20);
+                    color: $text-color;
+                    font-weight: $medium-weight;
+                    padding-right: 32px;
+                    position: relative;
+
+                    &::after {
+                        background-color: $text-color;
+                        content: '';
+                        height: 28px;
+                        mask-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNWY2MzY4IiB2aWV3Qm94PSIwIC05NjAgOTYwIDk2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTYwLTI0MGwtNTYtNTggMTQyLTE0MkgxNjB2LTgwaDQ4Nkw1MDQtNjYybDU2LTU4IDI0MCAyNDAtMjQwIDI0MHoiLz48L3N2Zz4=');
+                        mask-position: center;
+                        mask-repeat: no-repeat;
+                        mask-size: 28px;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: all 0.3s ease 0s;
+                        width: 28px;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+
+                        &::after {
+                            right: -3px;
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+
+                @include media-breakpoint-up(lg) {
+                    flex-direction: row;
+                    row-gap: 0;
+                }
+            }
+
+            ul {
+                list-style-type: disclosure-closed;
+                padding-left: 40px;
+
+                li {
+                    margin-bottom: 20px;
+
+                    &::marker {
+                        color: $dark-blue-color;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            padding: 60px 50px;
+        }
+    }
+}

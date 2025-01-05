@@ -100,6 +100,19 @@ const Typography = () => {
           </a>
         </p>
         <p>
+          <a className="btn btn-orange" href="/">
+            Primärbutton
+          </a>{" "}
+          &nbsp;&nbsp;
+          <a className="btn btn-orange btn-outline btn-arrow" href="/">
+            Sekundärbutton
+          </a>{" "}
+          &nbsp;&nbsp;
+          <a className="btn btn-orange btn-link btn-arrow" href="/">
+            Tertiärbutton
+          </a>
+        </p>
+        <p>
           <a className="btn btn-green" href="/">
             Primärbutton
           </a>{" "}

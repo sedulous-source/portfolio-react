@@ -67,7 +67,6 @@ const HeroMasonrySection = () => {
             <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-156x85">
                 <video playsInline className="object-fit-cover" ><source src={Video} type="video/mp4" /></video>
-                {/* <img className="object-fit-cover" src={Images.adarshImage} /> */}
                 <button className="play-button btn btn-link">
                   <svg viewBox="0 0 13 16" height="16" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none">
@@ -85,12 +84,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>75 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-light-green">
-                <p>Großer<br />Siedershof</p>
+                <p>Lorem<br />Ipsum</p>
               </div>
             </div>
           </div>
@@ -100,12 +99,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>60 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-orange">
-                <p>Goethe-Institut <br />Schwäbisch Hall</p>
+                <p>Lorem-Ipsum <br />Dolar</p>
               </div>
             </div>
           </div>
@@ -115,12 +114,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>40 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-light-blue">
-                <p>Städte-<br />freundschaft<br />Lappeenranta</p>
+                <p>Dolar<br />Ipsum<br />Laura</p>
               </div>
             </div>
           </div>
@@ -133,7 +132,7 @@ const HeroMasonrySection = () => {
                   <img className="object-fit-cover carousel-autoplay__item" src={Images.hero} />
                 </div>
                 <div className="hero-masonry-teaser__media__link">
-                  <a href="/" target="_blank" className="btn btn-white btn-arrow btn-outline">Learn More</a>
+                  <a Sub Title target="_blank" className="btn btn-white btn-arrow btn-outline">Learn More</a>
                 </div>
               </div>
             </div>
@@ -144,12 +143,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>30 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-lila">
-                <p>Radio &shy;<br />Sthörfunk</p>
+                <p>Tecnology<br />Here</p>
               </div>
             </div>
           </div>
@@ -159,12 +158,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>100 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-green">
-                <p>Freilichtspiele <br />Schwäbisch Hall e.V.</p>
+                <p>Ipsumdolar <br />Lauram Hall elex</p>
               </div>
             </div>
           </div>
@@ -174,12 +173,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>20 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-pink">
-                <p>Internationales <br />Jugendtheater- <br /> festival</p>
+                <p>Internationale <br />Journey- <br /> festival</p>
               </div>
             </div>
           </div>
@@ -189,12 +188,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>20 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-violet">
-                <p>Jugendtheater- <br /> festival</p>
+                <p>Jugtheater- <br /> Jalsa</p>
               </div>
             </div>
           </div>
@@ -204,12 +203,12 @@ const HeroMasonrySection = () => {
               <div className="hero-masonry-teaser__media ratio ratio-200x164">
                 <img className="object-fit-cover" src={Images.adarshImage} />
                 <div className="hero-masonry-teaser__media__link">
-                  <p>20 Jahre</p>
-                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Mehr erfahren</a>
+                  <p>Sub Title</p>
+                  <a href="/" target="_blank" className="btn btn-white btn-link btn-arrow">Know More</a>
                 </div>
               </div>
               <div className="hero-masonry-teaser__content bg-yellow">
-                <p>Rats- <br /> bibliothek</p>
+                <p>Techclusive- <br /> Bibarer</p>
               </div>
             </div>
           </div>

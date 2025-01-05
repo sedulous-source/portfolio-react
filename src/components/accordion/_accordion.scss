@@ -327,6 +327,8 @@ Accordion
     }
 
     .accordion-button {
+      @include font-size($font-sizes22);
+      font-weight: $medium-weight;
       color: $text-color !important;
       align-items: baseline;
       background-color: transparent;
@@ -334,6 +336,7 @@ Accordion
       color: $body-color;
       margin-bottom: 0;
       padding: 27px 10px 24px 0;
+
 
       span {
         display: block;

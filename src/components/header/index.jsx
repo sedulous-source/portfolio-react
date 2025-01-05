@@ -86,7 +86,20 @@ const Header = () => {
           <div className="app-header-main-teaser">
             <div className="app-header-main-teaser__wrapper">
               <Link to="/" className="brand-logo">
-                <svg fill="none" viewBox="0 0 160 46" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="a" cx="1.42%" cy="4.44%" r="93.21%" fx="1.42%" fy="4.44%"><stop offset="0%" stop-color="#00c4cc"/><stop offset="52.5%" stop-color="#5a32fa"/><stop offset="100%" stop-color="#7d2ae8"/></radialGradient></defs><rect width="45" height="45" fill="url(#a)" rx="22.5"/><path fill="#fff" d="M21.978 10.123c0-.001-.001-.001 0 0L10.675 33.98h4.844l9.147-18.474-2.688-5.383zM27 19.988l-4.665 9.688-.09.18h4.575l1.794 4.127h5.202L27 19.988z"/><text x="50" y="35" fill="url(#a)" font-family="Dancing Script" font-size="32" font-weight="700">Adarsh</text></svg>
+                <svg fill="none" viewBox="0 0 160 46" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="a" cx="1.42%" cy="4.44%" r="93.21%" fx="1.42%" fy="4.44%">
+                      <stop offset="0%" stopColor="#00c4cc" />
+                      <stop offset="52.5%" stopColor="#5a32fa" />
+                      <stop offset="100%" stopColor="#7d2ae8" />
+                    </radialGradient>
+                  </defs>
+                  <rect width="45" height="45" fill="url(#a)" rx="22.5" />
+                  <path fill="#fff" d="M21.978 10.123c0-.001-.001-.001 0 0L10.675 33.98h4.844l9.147-18.474-2.688-5.383zM27 19.988l-4.665 9.688-.09.18h4.575l1.794 4.127h5.202L27 19.988z" />
+                  <text x="50" y="35" fill="url(#a)" fontFamily="Dancing Script" fontSize="32" fontWeight="700">
+                    Adarsh
+                  </text>
+                </svg>
               </Link>
               <nav className={`navigation ${isMenuActive ? 'is-open' : ''}`.trim()}>
                 <ul className='navigation-list'>

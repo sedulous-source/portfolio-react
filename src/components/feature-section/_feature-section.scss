@@ -143,7 +143,13 @@
     color: $white;
     font-family: $font-quincy;
     margin-bottom: 0;
+    padding-bottom: 0;
     user-select: none;
+
+    &::before,
+    &::after {
+      content: none;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size: 28px;

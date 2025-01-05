@@ -169,6 +169,19 @@
   }
 }
 
+.bg-blue-gray {
+  background-color: rgba($light-blue-color, 0.2);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-blue-color;
+  }
+}
+
 .body-text-color {
   color: $text-color;
 }
@@ -236,7 +249,38 @@ body * {
   }
 
   &::-webkit-scrollbar-thumb {
-	  background-color: $text-light-color;
+	  background-color: $dark-color;
 	  background-image: -webkit-linear-gradient(45deg, rgba($white, 0.2) 25%, transparent 25%, transparent 50%, rgba($white, 0.2) 50%, rgba($white, 0.2) 75%, transparent 75%, transparent)
   }
 }
+
+h2 {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  transition: all 0.4s ease 0s;
+
+  &::before {
+    background-color: currentColor;
+    bottom: 3px;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    margin-left: -14px;
+    position: absolute;
+    width: 28px;
+  }
+
+  &::after {
+    background-color: currentColor;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 25px;
+    position: relative;
+    width: 100px;
+  }
+} 

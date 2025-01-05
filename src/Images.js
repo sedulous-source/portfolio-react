@@ -27,6 +27,11 @@ import java from './images/certifications/java.png';
 import python from './images/certifications/python.png';
 import sql from './images/certifications/sql.png';
 import htmlCssJs from './images/certifications/html-css-js.png';
+import billGates from './images/testimonial/bill-gates.jpg';
+import steveJobs from './images/testimonial/steve-jobs.jpg';
+import ratanTata from './images/testimonial/ratan-tata.jpeg';
+import jamesGosling from './images/testimonial/james-gosling.jpg';
+import jeffBezos from './images/testimonial/jeff-bezoz.jpg';
 
 const Images = {
   logo,
@@ -57,7 +62,12 @@ const Images = {
   java,
   python,
   sql,
-  htmlCssJs
+  htmlCssJs,
+  billGates,
+  steveJobs,
+  ratanTata,
+  jamesGosling,
+  jeffBezos
 };
 
 export default Images;
