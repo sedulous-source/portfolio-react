@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.6f1e5239.css",
-    "main.js": "/portfolio-react/static/js/main.0afb6055.js",
+    "main.js": "/portfolio-react/static/js/main.d906944d.js",
     "static/js/453.1407b060.chunk.js": "/portfolio-react/static/js/453.1407b060.chunk.js",
     "static/media/hero-video.mp4": "/portfolio-react/static/media/hero-video.be716e9ab27c363d2e74.mp4",
     "static/media/ratan-tata.jpeg": "/portfolio-react/static/media/ratan-tata.6663edbe4c1cb574d724.jpeg",
@@ -73,11 +73,11 @@
     "static/media/quivo.svg": "/portfolio-react/static/media/quivo.aed3980435f65d3474e973e30f085eb0.svg",
     "static/media/csi-online.svg": "/portfolio-react/static/media/csi-online.fc9dd189fcf7d000cb7ddbb1d806ff87.svg",
     "main.6f1e5239.css.map": "/portfolio-react/static/css/main.6f1e5239.css.map",
-    "main.0afb6055.js.map": "/portfolio-react/static/js/main.0afb6055.js.map",
+    "main.d906944d.js.map": "/portfolio-react/static/js/main.d906944d.js.map",
     "453.1407b060.chunk.js.map": "/portfolio-react/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f1e5239.css",
-    "static/js/main.0afb6055.js"
+    "static/js/main.d906944d.js"
   ]
 }
