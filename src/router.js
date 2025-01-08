@@ -11,7 +11,7 @@ import AccordionPage from './pages/Elements/AccordionPage';
 
 const AppRouter = () => {
   return (
-    <Router>
+    <Router basename="/portfolio-react">
       <Header />
       <main id="main" className="main" role="main">
         <Routes>
