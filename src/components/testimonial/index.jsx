@@ -11,6 +11,7 @@ const Testimonial = () => {
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={40}
+                    autoHeight={true}
                     breakpoints={{
                         slidesPerView: 1,
 

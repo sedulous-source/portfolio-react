@@ -8,6 +8,7 @@
         height: 100%;
         margin-bottom: 50px;
         min-height: 320px;
+        flex-direction: column;
 
         &__content {
             background-color: rgba($light-blue-color, 0.2);
@@ -28,12 +29,16 @@
         
         &__image {
             flex: 0 0 30%;
-
+            
             img {
                 height: 100%;
                 object-fit: cover;
                 width: 100%;
             }
+        }
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
         }
     }
 

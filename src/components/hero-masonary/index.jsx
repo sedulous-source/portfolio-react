@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Images from '../../Images';
-import Video from '../../video/hero-video.mp4';
+import Video from '../../video/technology.mp4';
 
 const HeroMasonrySection = () => {
   // Carousel functionality
@@ -66,7 +66,7 @@ const HeroMasonrySection = () => {
           <div className="hero-masonry-item hero-masonry-teaser--large">
             <div className="hero-masonry-teaser">
               <div className="hero-masonry-teaser__media ratio ratio-156x85">
-                <video playsInline className="object-fit-cover" ><source src={Video} type="video/mp4" /></video>
+                <video playsInline="playsInline" className="video-element object-fit-cover" poster={Images.technology}><source src={Video} type="video/mp4" /></video>
                 <button className="play-button btn btn-link">
                   <svg viewBox="0 0 13 16" height="16" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none">

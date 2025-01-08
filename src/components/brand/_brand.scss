@@ -18,11 +18,16 @@
         svg {
             aspect-ratio: 4 / 3;
             display: block;
-            max-width: 200px;
+            max-width: 100px;
             mix-blend-mode: multiply;
             object-fit: contain !important;
             transition: 0.25s ease-in-out;
             width: 100%;
+            
+            
+            @include media-breakpoint-up(md) {   
+                max-width: 200px;
+            }
         }
 
         &__content {
@@ -40,6 +45,24 @@
             position: absolute;
             transition: 0.45s ease-in-out;
             width: 100%;
+
+            p {
+                display: none;
+
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
+            }
+
+            .btn {
+                @include font-size($font-sizes12);
+                padding: 5px 12px;
+                
+                @include media-breakpoint-up(md) {
+                    @include font-size($font-sizes16);
+                    padding: 10px 30px;
+                }
+            }
         }
 
         &:hover {

@@ -28,10 +28,11 @@ import python from './images/certifications/python.png';
 import sql from './images/certifications/sql.png';
 import htmlCssJs from './images/certifications/html-css-js.png';
 import billGates from './images/testimonial/bill-gates.jpg';
-import steveJobs from './images/testimonial/steve-jobs.jpg';
-import ratanTata from './images/testimonial/ratan-tata.jpeg';
+import steveJobs from './images/testimonial/steve-jobs.webp';
+import ratanTata from './images/testimonial/ratan-tata.jpg';
 import jamesGosling from './images/testimonial/james-gosling.jpg';
 import jeffBezos from './images/testimonial/jeff-bezoz.jpg';
+import technology from './images/technology-poster.jpg';
 
 const Images = {
   logo,
@@ -67,7 +68,8 @@ const Images = {
   steveJobs,
   ratanTata,
   jamesGosling,
-  jeffBezos
+  jeffBezos,
+  technology
 };
 
 export default Images;

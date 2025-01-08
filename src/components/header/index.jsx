@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import adarshResume from '../../pdf/adarsh-sharma-resume.pdf';
 
 // App Header
 const Header = () => {
@@ -171,7 +172,7 @@ const Header = () => {
             </div>
 
             <div className="app-header-button">
-              <button src="/" className="button button--outline">Hire Me <i className="bi bi-download"></i></button>
+              <a href={adarshResume} target="_blank" download="" className="button button--outline">Hire Me <i className="bi bi-download"></i></a>
               <div className={`menu-trigger-btn ${isMenuActive ? 'is-open' : ''}`.trim()} onClick={handleMenuClick}>
                 <div className='bar' />
                 <div className='bar' />
