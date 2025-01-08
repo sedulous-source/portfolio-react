@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.6f1e5239.css",
-    "main.js": "/portfolio-react/static/js/main.d906944d.js",
+    "main.css": "/portfolio-react/static/css/main.5778e24e.css",
+    "main.js": "/portfolio-react/static/js/main.e332a1a5.js",
     "static/js/453.1407b060.chunk.js": "/portfolio-react/static/js/453.1407b060.chunk.js",
-    "static/media/hero-video.mp4": "/portfolio-react/static/media/hero-video.be716e9ab27c363d2e74.mp4",
-    "static/media/ratan-tata.jpeg": "/portfolio-react/static/media/ratan-tata.6663edbe4c1cb574d724.jpeg",
     "static/media/core-java.pdf": "/portfolio-react/static/media/core-java.64c3295eee3715e2879b.pdf",
     "static/media/bill-gates.jpg": "/portfolio-react/static/media/bill-gates.b6860dd5e4edac302d94.jpg",
+    "static/media/technology.mp4": "/portfolio-react/static/media/technology.4da65da039ec23a8fa68.mp4",
     "static/media/web-development.pdf": "/portfolio-react/static/media/web-development.5590e28b6f927110f7f1.pdf",
     "static/media/Adarsh-img.jpeg": "/portfolio-react/static/media/Adarsh-img.0ac3c2e5224f877ce26c.jpeg",
     "static/media/learning-python.pdf": "/portfolio-react/static/media/learning-python.a00eafa6da0161171b20.pdf",
@@ -16,10 +15,12 @@
     "static/media/sql.pdf": "/portfolio-react/static/media/sql.491f70ca0c285bfe8e72.pdf",
     "static/media/bootstrap-icons.woff2?": "/portfolio-react/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/jeff-bezoz.jpg": "/portfolio-react/static/media/jeff-bezoz.0205d302b8fda7754d01.jpg",
-    "static/media/steve-jobs.jpg": "/portfolio-react/static/media/steve-jobs.5cfe4aa4d4ef0f1c4ac8.jpg",
+    "static/media/adarsh-sharma-resume.pdf": "/portfolio-react/static/media/adarsh-sharma-resume.d71fdde2159da21c2e6e.pdf",
     "static/media/HelfenHilft.png": "/portfolio-react/static/media/HelfenHilft.38681e005bec14650a2a.png",
     "static/media/james-gosling.jpg": "/portfolio-react/static/media/james-gosling.eb3254c9afccfaaab351.jpg",
+    "static/media/ratan-tata.jpg": "/portfolio-react/static/media/ratan-tata.70445970c89422acdc78.jpg",
     "static/media/stadt-wolgast.png": "/portfolio-react/static/media/stadt-wolgast.1d89ad97de9a7f9fa1b6.png",
+    "static/media/steve-jobs.webp": "/portfolio-react/static/media/steve-jobs.12c6bc21cfa81b5ad208.webp",
     "static/media/python.png": "/portfolio-react/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/DancingScriptBold.woff": "/portfolio-react/static/media/DancingScriptBold.9fb145deb87e11ae704c.woff",
     "static/media/Playfair-Display-Bold.woff": "/portfolio-react/static/media/Playfair-Display-Bold.e5d5e1d31c5634e30831.woff",
@@ -45,6 +46,7 @@
     "static/media/stadt-weikersheim.png": "/portfolio-react/static/media/stadt-weikersheim.6c62c064c577298a9c9a.png",
     "static/media/Poppins-SemiBold.woff": "/portfolio-react/static/media/Poppins-SemiBold.a7067cbcd952f4f07beb.woff",
     "static/media/Poppins-Bold.woff": "/portfolio-react/static/media/Poppins-Bold.c2a4000ed26272d64521.woff",
+    "static/media/technology-poster.jpg": "/portfolio-react/static/media/technology-poster.9f56864b9770dadba922.jpg",
     "static/media/Poppins-Regular.woff": "/portfolio-react/static/media/Poppins-Regular.f4b24ebbccd7413481ec.woff",
     "static/media/Poppins-Medium.woff": "/portfolio-react/static/media/Poppins-Medium.a6d547b7f7dc76991c62.woff",
     "static/media/Poppins-Light.woff": "/portfolio-react/static/media/Poppins-Light.3e0d3c7acba63f8ace78.woff",
@@ -72,12 +74,12 @@
     "index.html": "/portfolio-react/index.html",
     "static/media/quivo.svg": "/portfolio-react/static/media/quivo.aed3980435f65d3474e973e30f085eb0.svg",
     "static/media/csi-online.svg": "/portfolio-react/static/media/csi-online.fc9dd189fcf7d000cb7ddbb1d806ff87.svg",
-    "main.6f1e5239.css.map": "/portfolio-react/static/css/main.6f1e5239.css.map",
-    "main.d906944d.js.map": "/portfolio-react/static/js/main.d906944d.js.map",
+    "main.5778e24e.css.map": "/portfolio-react/static/css/main.5778e24e.css.map",
+    "main.e332a1a5.js.map": "/portfolio-react/static/js/main.e332a1a5.js.map",
     "453.1407b060.chunk.js.map": "/portfolio-react/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f1e5239.css",
-    "static/js/main.d906944d.js"
+    "static/css/main.5778e24e.css",
+    "static/js/main.e332a1a5.js"
   ]
 }
