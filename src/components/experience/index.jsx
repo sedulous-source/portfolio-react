@@ -23,9 +23,17 @@ const Experience = () => {
                         </h4>
                         <ul>
                             <li>Developed responsive web applications using HTML, CSS, Bootstrap and JavaScript to improve user experience and enhance functionality.</li>
+                            <li>Interacted with clients over calls to understand project requirements, address concerns, and provide updates on project status, ensuring alignment with client expectations and timelines.</li>
+                            <li>Prepared Technical Standard Reports, Speed Performance Reports, and maintained Client Hour Estimation Reports.</li>
+                            <li>Managed client communications, keeping them informed of progress and any changes, and maintained a high level of satisfaction.</li>
                             <li>Collaborated with design and backend teams to create visually appealing and highly functional websites for clients.</li>
+                            <li>Performed web analysis to monitor user behavior, track key performance metrics, and recommend improvements for better user experience and website performance.</li>
+                            <li>Maintained and updated existing websites by troubleshooting and debugging code, ensuring seamless operation across multiple browsers and devices.</li>
                             <li>Implemented UI/UX best practices and conducted user testing to optimize website performance and drive engagement.</li>
-                            <li>Maintained and updated existing websites by troubleshooting and debuggingcode to ensure seamless operation across multiple browsers and devices.</li>
+                            <li>Maintained and updated existing websites by troubleshooting and debugging code to ensure seamless operation across multiple browsers and devices.</li>
+                            <li>Ensured website accessibility by following WCAG standards, using semantic HTML, ARIA roles, and enabling keyboard navigation for inclusivity.</li>
+                            <li>Improved SEO by maintaining clean code, implementing meta tags, alt attributes, and ensuring mobile responsiveness to enhance search engine visibility.</li>
+                            <li>Developer VS Code Extension: <a className='text-primary btn btn-link btn-arrow' href="https://marketplace.visualstudio.com/items?itemName=bharat-nitsan.typo3-contentblock-snippets&ssr=false#review-details">Typo3 Content Block Snippet</a></li>
                         </ul>
                     </div>
 

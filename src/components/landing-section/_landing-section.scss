@@ -9,8 +9,6 @@ Landing Section
     position: relative;
 
     img {
-      // border-radius: 25% 25% 0 0;
-      // box-shadow: 0 2px 4px rgba(33, 51, 67, .12);
       clip-path: circle();
       imageRendering: -webkit-optimize-contrast;
       object-fit: cover;
@@ -33,7 +31,6 @@ Landing Section
 
     &.blob--small-stars {
       bottom: -60px;
-      // display: none;
       right: 0;
       
       @include media-breakpoint-up(lg) {

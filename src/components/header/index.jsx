@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import adarshResume from '../../pdf/adarsh-sharma-resume.pdf';
+import pdf from '../../pdf';
 
 // App Header
 const Header = () => {
@@ -70,9 +70,9 @@ const Header = () => {
         <div className="container-full">
           <div className="app-header-top-wrapper">
             <ul className="d-flex">
-              <li><a href="https://www.instagram.com/adarsh_.sharma._/?igsh=MW5nMmJ4aHl2MGF1OQ%3D%3D&utm_source=qr"><i className="bi bi-instagram"></i></a></li>
-              <li><a href="https://gitlab.com/ada70351"><i className="bi bi-github"></i></a></li>
-              <li><a href="/"><i className="bi bi-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/adarsh_.sharma._?igsh=MW5nMmJ4aHl2MGF1OQ%3D%3D&utm_source=qr"><i className="bi bi-instagram"></i></a></li>
+              <li><a href="https://github.com/sedulous-source"><i className="bi bi-github"></i></a></li>
+              <li><a href="www.linkedin.com/in/adarsh-sharma-994890332"><i className="bi bi-linkedin"></i></a></li>
             </ul>
             <ul className="d-flex">
               <li><a href="https://api.whatsapp.com/send?phone=9044477693"><i className="bi bi-whatsapp"></i></a></li>
@@ -172,7 +172,7 @@ const Header = () => {
             </div>
 
             <div className="app-header-button">
-              <a href={adarshResume} target="_blank" download="" className="button button--outline">Hire Me <i className="bi bi-download"></i></a>
+              <a href={pdf.adarshResume} target="_blank" download="" className="button button--outline">Hire Me <i className="bi bi-download"></i></a>
               <div className={`menu-trigger-btn ${isMenuActive ? 'is-open' : ''}`.trim()} onClick={handleMenuClick}>
                 <div className='bar' />
                 <div className='bar' />

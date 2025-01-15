@@ -278,8 +278,6 @@ body.menu--open {
 
         &:hover {
           &::before {
-            // left: 0;
-            // right: auto;
             width: 100%
           }
         }
@@ -287,6 +285,7 @@ body.menu--open {
 
       @include media-breakpoint-up(lg) {
         @include font-size($font-sizes18);
+        padding: 21px 18px;
       }
     }
 

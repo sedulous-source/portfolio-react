@@ -1,4 +1,4 @@
-import adarshResume from './pdf/adarsh-sharma-resume.pdf';
+import adarshResume from './pdf/Adarsh_Resume.pdf';
 import coreJava from './pdf/core-java.pdf';
 import python from './pdf/learning-python.pdf';
 import sql from './pdf/sql.pdf';
