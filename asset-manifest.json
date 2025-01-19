@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.0391a963.css",
-    "main.js": "/portfolio-react/static/js/main.2e2408ad.js",
+    "main.js": "/portfolio-react/static/js/main.aaac0d5e.js",
     "static/js/453.1407b060.chunk.js": "/portfolio-react/static/js/453.1407b060.chunk.js",
     "static/media/core-java.pdf": "/portfolio-react/static/media/core-java.64c3295eee3715e2879b.pdf",
     "static/media/bill-gates.jpg": "/portfolio-react/static/media/bill-gates.b6860dd5e4edac302d94.jpg",
@@ -14,8 +14,8 @@
     "static/media/bootstrap-icons.woff?": "/portfolio-react/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/sql.pdf": "/portfolio-react/static/media/sql.491f70ca0c285bfe8e72.pdf",
     "static/media/bootstrap-icons.woff2?": "/portfolio-react/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/Adarsh_Resume.pdf": "/portfolio-react/static/media/Adarsh_Resume.b89a792f276af30ca5f5.pdf",
     "static/media/jeff-bezoz.jpg": "/portfolio-react/static/media/jeff-bezoz.0205d302b8fda7754d01.jpg",
+    "static/media/Adarsh_Resume.pdf": "/portfolio-react/static/media/Adarsh_Resume.4384a462088734e72048.pdf",
     "static/media/HelfenHilft.png": "/portfolio-react/static/media/HelfenHilft.38681e005bec14650a2a.png",
     "static/media/james-gosling.jpg": "/portfolio-react/static/media/james-gosling.eb3254c9afccfaaab351.jpg",
     "static/media/ratan-tata.jpg": "/portfolio-react/static/media/ratan-tata.70445970c89422acdc78.jpg",
@@ -75,11 +75,11 @@
     "static/media/quivo.svg": "/portfolio-react/static/media/quivo.aed3980435f65d3474e973e30f085eb0.svg",
     "static/media/csi-online.svg": "/portfolio-react/static/media/csi-online.fc9dd189fcf7d000cb7ddbb1d806ff87.svg",
     "main.0391a963.css.map": "/portfolio-react/static/css/main.0391a963.css.map",
-    "main.2e2408ad.js.map": "/portfolio-react/static/js/main.2e2408ad.js.map",
+    "main.aaac0d5e.js.map": "/portfolio-react/static/js/main.aaac0d5e.js.map",
     "453.1407b060.chunk.js.map": "/portfolio-react/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0391a963.css",
-    "static/js/main.2e2408ad.js"
+    "static/js/main.aaac0d5e.js"
   ]
 }
